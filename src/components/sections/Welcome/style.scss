@@ -1,0 +1,51 @@
+@import '@/Styles/globals.scss';
+.welcome{
+    padding: clamp(5rem, 3.6581rem + 6.6061vw, 10rem) 0 clamp(3.75rem, 3.0791rem + 3.3031vw, 6.25rem) 0;
+    .content-wrap{
+        padding: 0 60px;
+
+        .title{
+            font-size: $fz64;
+            font-weight: 700;
+            width: 70vw;
+            margin-bottom: 100px;
+        }
+
+        .content-bottom{
+            display: grid;
+            grid-template-columns: 325px auto;
+
+            .sub-title{
+                font-size: $fz16;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            .sub-content{
+                grid-column: 3;
+
+                .description{
+                    font-size: $fz20;
+                    font-weight: 500;
+                    color: $text-color;
+                    margin-bottom: 60px;
+                }
+                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .welcome{
+        .content-wrap{
+            .content-bottom{
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    }
+    
+}

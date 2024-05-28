@@ -1,0 +1,141 @@
+@import '@/styles/globals.scss';
+
+.custom-button{
+    border: 2px solid;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+    &.normal{
+        padding: 1rem 2rem;
+
+        .btn-name{
+            font-size: $fz20;
+        }
+    }
+    &.small{
+        padding: 0.5rem 1rem;
+        
+        .btn-name{
+            font-size: $fz16;
+        }
+    }
+
+    .btn-name{
+        font-weight: 500;
+        position: relative;
+        transition: color 0.3s;
+        transition-timing-function: ease-in-out;
+        z-index: 1;
+    }
+    .arrow-icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+
+        path{
+            transition: stroke 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+    }
+
+    .back-layer{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: left 0.3s;
+        transition-timing-function: ease-in-out;
+        z-index: 0;
+
+        &.primary{
+            background-color: $primary-blue;
+        }
+        &.white{
+            background-color: $white;
+        }
+        &.gray{
+            background-color: $gray;
+        }
+        
+    }
+
+    &.primary{
+        background-color: $primary-blue;
+        border-color: $primary-blue;
+
+        .btn-name{
+            color: $white;
+        }
+        .arrow-icon{
+            path{
+                stroke: $white;
+            }
+        }
+
+        &:hover{
+            .btn-name{
+                color: $primary-blue;
+            }
+            .arrow-icon{
+                path{
+                    stroke: $primary-blue;
+                }
+            }
+        }
+    }
+    &.transparent-white{
+        background-color: transparent;
+        border-color: $white;
+
+        .btn-name{
+            color: $white;
+        }
+        .arrow-icon{
+            path{
+                stroke: $white;
+            }
+        }
+
+        &:hover{
+            .btn-name{
+                color: $gray;
+            }
+            .arrow-icon{
+                path{
+                    stroke: $gray;
+                }
+            }
+        }
+    }
+
+    &:hover{
+
+        .btn-name{
+            transition: color 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+    
+        .back-layer{
+            left: 0;
+            transition: left 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+        .arrow-icon path{
+                transition: stroke 0.3s;
+                transition-timing-function: ease-in-out;
+        }
+
+
+    }
+}

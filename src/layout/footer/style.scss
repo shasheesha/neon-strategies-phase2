@@ -1,0 +1,137 @@
+@import '@/styles/globals.scss';
+
+footer {
+    .content-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3.125em 0;
+
+        .title {
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            font-size: $fz16;
+        }
+
+        .data-row {
+            display: flex;
+            flex-direction: row;
+            gap: 17px;
+
+            p {
+                min-width: 260px;
+                font-size: $fz20;
+            }
+        }
+
+        p {
+            color: $text-color;
+            font-size: $fz16;
+        }
+
+        .link {
+            color: $text-color;
+
+            &:hover {
+                color: $primary-blue;
+                transition: color 0.3s;
+                transition-timing-function: ease-in-out;
+            }
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            .social-icon-wrap {
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                border: 2px solid $black;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                svg {
+                    width: 20px;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;
+
+                    path {
+                        fill: $black;
+                        transition: fill 0.3s;
+                        transition-timing-function: ease-in-out;
+
+                    }
+                }
+
+                .back-layer {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: $gray;
+                    left: -100%;
+                    transition: left 0.3s;
+                    transition-timing-function: ease-in-out;
+                    z-index: 0;
+                }
+
+                &:hover {
+
+                    svg {
+                        path {
+                            fill: $white;
+                            transition: fill 0.3s;
+                            transition-timing-function: ease-in-out;
+                        }
+                    }
+
+                    .back-layer {
+                        left: 0;
+                        transition: left 0.3s;
+                        transition-timing-function: ease-in-out;
+                    }
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    footer {
+        .content-wrap {
+            .title {
+                margin-bottom: 1rem;
+            }
+
+            &.top {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            &.bottom {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 3px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    footer {
+        .content-wrap {
+            .data-row {
+                flex-direction: column;
+            }
+        }
+    }
+}

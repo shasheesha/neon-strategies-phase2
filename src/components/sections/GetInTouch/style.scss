@@ -1,0 +1,42 @@
+@import '@/styles/globals.scss';
+.get-in-touch{
+    padding: 12.5em 0 3.125em 0;
+
+    .content-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .section-label{
+            background-color: $dark-blue;
+            padding: 0.75em 1.5em;
+            border: 0px transparent;
+            border-radius: 100px;
+            color: $white;
+            font-size: $fz34;
+        }
+
+        .heading{
+            font-size: $fz72;
+            line-height: calc($fz72 + 10px);
+            text-align: center;
+        }
+        .email-address{
+            font-size: $fz34;
+            text-align: center;
+            text-decoration: none;
+            width: fit-content;
+            color: $text-color;
+            transition: color 0.3s;
+            transition-timing-function: ease-in-out;
+            
+            &:hover{
+                color: $primary-blue;
+                transition: color 0.3s;
+                transition-timing-function: ease-in-out;
+            }
+        }
+    }
+}
