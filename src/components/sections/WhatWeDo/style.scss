@@ -1,17 +1,9 @@
 @import '@/Styles/variables.scss';
-.welcome{
+.what-we-do{
     padding: $s200 0 $s100 0;
     .content-wrap{
         padding: 0 $s80;
 
-        .title{
-            font-size: $fz64;
-            font-weight: 700;
-            width: 70vw;
-            margin-bottom: $s100;
-        }
-
-        .content-bottom{
             display: grid;
             grid-template-columns: 325px auto;
 
@@ -21,33 +13,28 @@
                 text-transform: uppercase;
                 margin-bottom: $s20;
                 margin-top: 10px;
-
             }
 
             .sub-content{
                 grid-column: 3;
 
-                .description{
-                    font-size: $fz20;
-                    font-weight: 500;
-                    line-height: $s40;
-                    color: $text-color;
+                .headline{
+                    font-size: $fz48;
+                    font-weight: 300;
+                    line-height: $s60;
+                    color: $black;
                     margin-bottom: $s60;
                 }
                 
             }
-        }
     }
 }
 
 @media only screen and (max-width: 1024px){
-    .welcome{
+    .what-we-do{
         .content-wrap{
-            .content-bottom{
                 display: flex;
                 flex-direction: column;
-
-            }
         }
     }
     

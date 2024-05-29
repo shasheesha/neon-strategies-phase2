@@ -75,8 +75,9 @@ const HeaderNavigation: React.FC = () =>{
                         </ul>
                     </div>
                     <div className="btn-wrap">
-                        <CustomButton btnName={"Let's Talk"} btnSize={"small"} btnColor={"primary"} animatColor="white" />
-            
+                        <div className="contact-btn">
+                            <CustomButton btnName={"Let's Talk"} btnSize={"small"} btnColor={"primary"} animatColor="white" />
+                        </div>
                          <div className={`menu-icon ${isMegamenuOpen ? 'open' : null}`} onClick={toggleMegamenu}>
                            <div className="line-path"></div>
                            <div className="line-path"></div>
@@ -95,7 +96,7 @@ const HeaderNavigation: React.FC = () =>{
                           </li>
                           <li className="droplist-wrap">
                             <div onClick={toggleServicesDropdown} className="nav-list-item">Services</div>
-                            <ul className={`droplist ${isServicesDropdownOpen ? 'expand' : null}`}>
+                            <ul className={`mb-droplist ${isServicesDropdownOpen ? 'expand' : null}`}>
                                 <li>
                                   <div onClick={() => handleScrollToSection('digital-marketing')} className="nav-list-item">Digital Marketing</div>
                                 </li>
@@ -116,7 +117,7 @@ const HeaderNavigation: React.FC = () =>{
                           <li>
                             <div onClick={() => handleScrollToSection('contact')} className="nav-list-item">Contact</div>
                           </li>
-                          <li className="flex flex-row justify-center py-5">
+                          <li>
                             <CustomButton btnName={"Let's Talk"} btnSize={"small"} btnColor={"transparent-primary"} animatColor="primary"  withArrow={true} />
                           </li>
                         </ul>

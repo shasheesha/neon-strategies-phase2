@@ -1,0 +1,53 @@
+@import '@/Styles/variables.scss';
+
+.faq {
+    padding: $s200 0 $s100 0;
+
+    .content-wrap {
+        padding: 0 $s80;
+
+        display: grid;
+        grid-template-columns: 325px auto;
+
+        .sub-title {
+            font-size: $fz16;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: $s20;
+            margin-top: 10px;
+
+        }
+
+        .sub-content {
+            grid-column: 3;
+
+            .headline {
+                font-size: $fz48;
+                font-weight: 300;
+                line-height: $s60;
+                color: $black;
+                margin-bottom: $s40;
+            }
+
+            .description {
+                font-size: $fz20;
+                font-weight: 500;
+                line-height: $s40;
+                color: $text-color;
+                margin-bottom: $s30;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .faq {
+        .content-wrap {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+}
