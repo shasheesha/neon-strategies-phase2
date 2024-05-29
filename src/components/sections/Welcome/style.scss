@@ -1,21 +1,25 @@
 @import '@/styles/_variables.scss';
-.welcome{
+
+.welcome {
     padding: $s200 0 $s100 0;
-    .content-wrap{
+
+    .content-wrap {
         padding: 0 $s80;
 
-        .title{
+        .title {
             font-size: $fz64;
             font-weight: 700;
             width: 70vw;
             margin-bottom: $s100;
         }
 
-        .content-bottom{
+        .content-bottom {
             display: grid;
             grid-template-columns: 325px auto;
+            gap: 1rem;
 
-            .sub-title{
+
+            .sub-title {
                 font-size: $fz16;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -24,31 +28,32 @@
 
             }
 
-            .sub-content{
+            .sub-content {
                 grid-column: 3;
 
-                .description{
+                .description {
                     font-size: $fz20;
                     font-weight: 500;
                     line-height: $s40;
                     color: $text-color;
                     margin-bottom: $s60;
                 }
-                
+
             }
         }
     }
 }
 
-@media only screen and (max-width: 1024px){
-    .welcome{
-        .content-wrap{
-            .content-bottom{
+@media only screen and (max-width: 1024px) {
+    .welcome {
+        .content-wrap {
+            .content-bottom {
                 display: flex;
                 flex-direction: column;
+                gap: 2rem;
 
             }
         }
     }
-    
+
 }
