@@ -1,0 +1,42 @@
+@import '@/styles/variables.scss';
+
+.arrow-link-button{
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 0;
+    gap: 10px;
+
+    .botton-name{
+        font-size: $fz16;
+        font-weight: 500;
+        text-decoration: underline;
+        color: $black;
+        transition: color 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .arrow-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        stroke: $black;
+        transition: stroke 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    &:hover{
+        .botton-name{
+            color: $primary-blue;
+            transition: color 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+        .arrow-icon{
+            stroke: $primary-blue;
+            transition: color 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+    }
+
+}

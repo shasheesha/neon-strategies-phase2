@@ -1,0 +1,38 @@
+//Colors
+$primary-blue: #001897;
+$dark-blue: #000F5C;
+$black: #000000;
+$white: #FFFFFF;
+$gray: #444444;
+
+$text-color: #444444;
+
+$primary-bg: #FFFFFF;
+$secondary-bg: #F5F5F5;
+$tag-bg: #F1F1F1;
+
+$gray-line: #F2EFE7;
+
+//Font sizes
+$fz12: clamp(0.625rem, 0.5915rem + 0.1652vw, 0.75rem); //  12px;
+$fz16: clamp(0.75rem, 0.6829rem + 0.3303vw, 1rem); //  16px;
+$fz20: clamp(1rem, 0.9329rem + 0.3303vw, 1.25rem); //20px;
+$fz24: clamp(1.125rem, 1.0244rem + 0.4955vw, 1.5rem); //  24px;
+$fz32: clamp(1.5rem, 1.3658rem + 0.6606vw, 2rem);//  32px;
+$fz34: clamp(1.25rem, 1.0152rem + 1.1561vw, 2.125rem); // 34px;
+$fz48: clamp(2.25rem, 2.0487rem + 0.9909vw, 3rem); //48px;
+$fz64: clamp(2rem, 1.4633rem + 2.6424vw, 4rem); //  64px;
+$fz72: clamp(1.5rem, 0.6949rem + 3.9637vw, 4.5rem); //72  px;
+
+
+//Spacings
+$s20: clamp(0.625rem, 0.4573rem + 0.8258vw, 1.25rem);
+$s30: clamp(0.9375rem, 0.6859rem + 1.2386vw, 1.875rem);
+$s40: clamp(1.25rem, 0.9145rem + 1.6515vw, 2.5rem);
+$s60: clamp(1.875rem, 1.3718rem + 2.4773vw, 3.75rem); 
+$s80: clamp(2.5rem, 1.8291rem + 3.3031vw, 5rem); 
+$s100: clamp(3.125rem, 2.2863rem + 4.1288vw, 6.25rem); 
+$s120: clamp(3.75rem, 2.7436rem + 4.9546vw, 7.5rem); 
+$s160: clamp(5rem, 3.6581rem + 6.6061vw, 10rem); 
+$s200: clamp(6.25rem, 4.5727rem + 8.2576vw, 12.5rem); 
+$s250: clamp(7.8125rem, 5.7158rem + 10.322vw, 15.625rem); 

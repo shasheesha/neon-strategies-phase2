@@ -1,3 +1,4 @@
+import LinkWithArrow from '@/components/button/LinkWithArrow/LinkWithArrow';
 import './style.scss';
 
 const Welcome: React.FC = () => {
@@ -13,7 +14,7 @@ const Welcome: React.FC = () => {
                     <div className='sub-content'>
                         <p className='description'>At Neon Strategies, we illuminate your brand with innovative and dynamic marketing solutions. Our team of experts is committed to transforming your vision into reality with strategies that deliver measurable results and sustainable growth.</p>
                         <div className="link-button">
-                            Link
+                            <LinkWithArrow label={'Start Your Journey with Us!'} />
                         </div>
                     </div>
                     </div>

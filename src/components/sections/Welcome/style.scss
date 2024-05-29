@@ -1,14 +1,14 @@
-@import '@/Styles/globals.scss';
+@import '@/Styles/variables.scss';
 .welcome{
     padding: clamp(5rem, 3.6581rem + 6.6061vw, 10rem) 0 clamp(3.75rem, 3.0791rem + 3.3031vw, 6.25rem) 0;
     .content-wrap{
-        padding: 0 60px;
+        padding: 0 $s80;
 
         .title{
             font-size: $fz64;
             font-weight: 700;
             width: 70vw;
-            margin-bottom: 100px;
+            margin-bottom: $s100;
         }
 
         .content-bottom{
@@ -19,7 +19,7 @@
                 font-size: $fz16;
                 font-weight: 700;
                 text-transform: uppercase;
-                margin-bottom: 20px;
+                margin-bottom: $s20;
             }
 
             .sub-content{
@@ -28,8 +28,9 @@
                 .description{
                     font-size: $fz20;
                     font-weight: 500;
+                    line-height: $s40;
                     color: $text-color;
-                    margin-bottom: 60px;
+                    margin-bottom: $s60;
                 }
                 
             }

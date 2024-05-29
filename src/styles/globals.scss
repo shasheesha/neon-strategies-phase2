@@ -1,41 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
-$primary-blue: #001897;
-$dark-blue: #000F5C;
-$black: #000000;
-$white: #FFFFFF;
-$gray: #444444;
-
-$text-color: #444444;
-
-$primary-bg: #FFFFFF;
-$secondary-bg: #F5F5F5;
-$tag-bg: #F1F1F1;
-
-$gray-line: #F2EFE7;
-
-$fz12: clamp(0.625rem, 0.5915rem + 0.1652vw, 0.75rem); //  12px;
-$fz16: clamp(0.75rem, 0.6829rem + 0.3303vw, 1rem); //  16px;
-$fz20: clamp(1rem, 0.9329rem + 0.3303vw, 1.25rem); //20px;
-$fz24: clamp(1.125rem, 1.0244rem + 0.4955vw, 1.5rem); //  24px;
-$fz32: clamp(1.5rem, 1.3658rem + 0.6606vw, 2rem);//  32px;
-$fz34: clamp(1.25rem, 1.0152rem + 1.1561vw, 2.125rem); // 34px;
-$fz48: clamp(2.25rem, 2.0487rem + 0.9909vw, 3rem); //48px;
-$fz64: clamp(2rem, 1.4633rem + 2.6424vw, 4rem); //  64px;
-$fz72: clamp(1.5rem, 0.6949rem + 3.9637vw, 4.5rem); //72  px;
-
-
-//Spacings
-$s20: clamp(2.5rem, 1.4936rem + 4.9546vw, 6.25rem);
-$s30: clamp(2.5rem, 1.4936rem + 4.9546vw, 6.25rem); 
-$s40: clamp(2.5rem, 1.4936rem + 4.9546vw, 6.25rem); 
-$s60: clamp(2.5rem, 1.4936rem + 4.9546vw, 6.25rem); 
-$s100: clamp(2.5rem, 1.4936rem + 4.9546vw, 6.25rem); 
-$s120: clamp(2.5rem, 1.4936rem + 4.9546vw, 6.25rem); 
-$s160: clamp(2.5rem, 1.4936rem + 4.9546vw, 6.25rem); 
-$s200: clamp(2.5rem, 1.4936rem + 4.9546vw, 6.25rem); 
-$s250: clamp(2.5rem, 1.4936rem + 4.9546vw, 6.25rem); 
-
+@import './variables.scss';
 *{
   margin: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
