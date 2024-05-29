@@ -77,7 +77,7 @@ const HeaderNavigation: React.FC = () =>{
                     <div className="btn-wrap">
                         <CustomButton btnName={"Let's Talk"} btnSize={"small"} btnColor={"primary"} animatColor="white" />
             
-                         <div className="menu-icon" onClick={toggleMegamenu}>
+                         <div className={`menu-icon ${isMegamenuOpen ? 'open' : null}`} onClick={toggleMegamenu}>
                            <div className="line-path"></div>
                            <div className="line-path"></div>
                            <div className="line-path"></div>
