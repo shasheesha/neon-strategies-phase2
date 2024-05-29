@@ -21,6 +21,7 @@ footer {
             p {
                 min-width: 260px;
                 font-size: $fz20;
+                line-height: $s40;
             }
         }
 
@@ -100,7 +101,20 @@ footer {
             }
         }
 
+        &.bottom{
+            p{
+                width: 100%;
 
+                &:nth-child(2){
+                    text-align: center;
+                }
+                
+                &:nth-child(3){
+                    text-align: end;
+                }
+            }
+
+        }
     }
 }
 
@@ -119,8 +133,11 @@ footer {
             &.bottom {
                 flex-direction: column;
                 justify-content: center;
-                text-align: center;
                 gap: 3px;
+
+                p{
+                    text-align: center !important;
+                }
             }
         }
     }
