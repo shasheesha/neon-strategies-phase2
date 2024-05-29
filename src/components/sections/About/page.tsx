@@ -5,7 +5,7 @@ const About: React.FC = () => {
 
     return(
         <>
-        <section className="about">
+        <section className="about" id='about'>
             <div className="container">
                 <div className="content-wrap">
                     <div className="sub-title">ABOUT US</div>

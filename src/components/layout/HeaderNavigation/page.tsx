@@ -64,7 +64,7 @@ const HeaderNavigation: React.FC = () =>{
                               </ul>
                           </li>
                           <li>
-                            <div onClick={() => handleScrollToSection('process')} className="nav-list-item">Process</div>
+                            <div onClick={() => handleScrollToSection('our-process')} className="nav-list-item">Process</div>
                           </li>
                           <li>
                             <div onClick={() => handleScrollToSection('faq')} className="nav-list-item">FAQ</div>
@@ -89,7 +89,6 @@ const HeaderNavigation: React.FC = () =>{
 
             <div className={`mobile-menu ${isMegamenuOpen ? 'expand' : null}`}>
                   <div className="container">
-                    <div className="content-wrap">
                         <ul className="nav-list">
                           <li>
                             <div onClick={() => handleScrollToSection('about')} className="nav-list-item">About</div>
@@ -109,7 +108,7 @@ const HeaderNavigation: React.FC = () =>{
                               </ul>
                           </li>
                           <li>
-                            <div onClick={() => handleScrollToSection('process')} className="nav-list-item">Process</div>
+                            <div onClick={() => handleScrollToSection('our-process')} className="nav-list-item">Process</div>
                           </li>
                           <li>
                             <div onClick={() => handleScrollToSection('faq')} className="nav-list-item">FAQ</div>
@@ -118,10 +117,11 @@ const HeaderNavigation: React.FC = () =>{
                             <div onClick={() => handleScrollToSection('contact')} className="nav-list-item">Contact</div>
                           </li>
                           <li>
-                            <CustomButton btnName={"Let's Talk"} btnSize={"small"} btnColor={"transparent-primary"} animatColor="primary"  withArrow={true} />
+                            <div className="btn-container">
+                              <CustomButton btnName={"Let's Talk"} btnSize={"normal"} btnColor={"transparent-primary"} animatColor="primary"  withArrow={true} />
+                            </div>
                           </li>
                         </ul>
-                    </div>
                   </div>
                 </div>
         </nav>

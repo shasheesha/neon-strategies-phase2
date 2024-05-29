@@ -1,217 +1,225 @@
 @import '@/styles/_variables.scss';
-.header-navigation{
+
+.header-navigation {
     position: fixed;
     width: 100%;
     z-index: 20;
     background-color: $white;
 
-    .content-wrap{
+    .content-wrap {
         padding: $s20 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
-        
-        .logo-wrap{
-            .logo{
+
+        .logo-wrap {
+            .logo {
                 width: clamp(8.125rem, 7.4541rem + 3.3031vw, 10.625rem);
                 height: auto;
             }
         }
-        // .nav-wrap{
-            .nav-list{
-                display: flex;
-                flex-direction: row;
-                gap: 20px;
-                justify-content: center;
-                align-items: center;
-                list-style: none;
 
-                .nav-list-item{
-                    cursor: pointer;
-                    font-size: $fz16;
-                    font-weight: 500;
-                    padding: 10px 0;
-                    position: relative;
-                    transition: 0.3s;
-                    transition-timing-function: ease-in-out;
-                    
-                    &::before{
-                        content: "";
-                        position: absolute;
-                        background-color: $primary-blue;
-                        padding: 1px 0;
-                        width: 0%;
-                        bottom: 0;
-                        transition: width 0.3s;
-                        transition-timing-function: ease-in-out;
-                    }
-                    &:hover{
-                        color: $primary-blue;
-                        transition: 0.3s;
-                        transition-timing-function: ease-in-out;
-                        
-                        &::before{
-                            width: 100%;
-                            transition: width 0.3s;
-                            transition-timing-function: ease-in-out;
-                        }
-                    }
-                }
-            }
+        .nav-list {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
 
-            .droplist-wrap{
-                position: relative;
-                
-                .droplist{
-                    list-style: none;
-                    position: absolute;
-                    background-color: $white;
-                    padding: 10px 10px;
-                    border-radius: 8px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                    height: 0%;
-                    overflow: hidden;
-                    opacity: 0;
-                    transition: 0.3s;
-                    transition-timing-function: ease-in-out;
-                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                        
-
-                    .droplist-item{
-                        cursor: pointer;
-                        font-size: $fz16;
-                        padding: 5px 10px;
-                        border-radius: 3px;
-                        text-wrap: nowrap;
-                        transition: 0.3s;
-                        transition-timing-function: ease-in-out;
-
-
-                        &:hover{
-                            background-color: $secondary-bg;
-                            transition: 0.3s;
-                            transition-timing-function: ease-in-out;
-                            
-                        }                    
-                    }
-
-                    &.expand{
-                        opacity: 1;
-                        height: fit-content;
-                        transition: 0.3s;
-                        transition-timing-function: ease-in-out;
-                    }
-                }
-            }
-            .menu-icon{
-                display: none;
-                flex-direction: column;
-                justify-content: end;
-                align-items: end;
-                gap: 10px;
+            .nav-list-item {
                 cursor: pointer;
+                font-size: $fz16;
+                font-weight: 500;
+                padding: 10px 0;
+                position: relative;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
 
-                .line-path{
-                    width: 50px;
-                    height: 5px;
-                    border-radius: 100px;
-                    background-color: $black;
-                    opacity: 0.5;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: $primary-blue;
+                    padding: 1px 0;
+                    width: 0%;
+                    bottom: 0;
                     transition: width 0.3s;
                     transition-timing-function: ease-in-out;
                 }
-                &.open{
-                    .line-path:first-child{
-                        width: 40px;
+
+                &:hover {
+                    color: $primary-blue;
+                    transition: 0.3s;
+                    transition-timing-function: ease-in-out;
+
+                    &::before {
+                        width: 100%;
                         transition: width 0.3s;
                         transition-timing-function: ease-in-out;
                     }
                 }
             }
-        // }
-    }
-    .mobile-menu{
-        display: none;
-        position: absolute;
-        height: 0%;
-        overflow: hidden;
-        z-index: 20;
-        width: 100%;
-        transition: height 0.7s;
-        transition-timing-function: ease-in-out;
-    
+        }
 
-        .container{
-                    
-            .nav-list{
+        .droplist-wrap {
+            position: relative;
+
+            .droplist {
+                list-style: none;
+                position: absolute;
+                background-color: $white;
+                padding: 10px 10px;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                height: 0%;
+                overflow: hidden;
+                opacity: 0;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+                .droplist-item {
+                    cursor: pointer;
+                    font-size: $fz16;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    text-wrap: nowrap;
+                    transition: 0.3s;
+                    transition-timing-function: ease-in-out;
+
+
+                    &:hover {
+                        background-color: $secondary-bg;
+                        transition: 0.3s;
+                        transition-timing-function: ease-in-out;
+
+                    }
+                }
+
+                &.expand {
+                    opacity: 1;
+                    height: fit-content;
+                    transition: 0.3s;
+                    transition-timing-function: ease-in-out;
+                }
+            }
+        }
+
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+            gap: 10px;
+            cursor: pointer;
+
+            .line-path {
+                width: 50px;
+                height: 5px;
+                border-radius: 100px;
+                background-color: $black;
+                opacity: 0.5;
+                transition: width 0.3s;
+                transition-timing-function: ease-in-out;
+            }
+
+            &.open {
+                .line-path:first-child {
+                    width: 40px;
+                    transition: width 0.3s;
+                    transition-timing-function: ease-in-out;
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        width: 100%;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+        padding: 0 1.25rem;
+        background-color: $white;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        z-index: 20;
+        overflow: hidden;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+        .container {
+            padding: 1.5rem 0;
+
+            .nav-list {
+                display: flex;
                 flex-direction: column;
                 width: 100%;
-
-                li{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                
-                }
-                .nav-list-item{
-                    width: fit-content;
-                    text-align: center;
-                }
-            }
-            .mb-droplist{                
                 list-style: none;
                 padding: 0;
-                height: 0;
-                position: relative;
-                overflow: hidden;
-                transition: height 0.3s;
-                transition-timing-function: ease-in-out;
 
-                li{
-                    display: flex;
-                    justify-content: center;
-                    text-wrap: nowrap;
+                .nav-list-item {
+                    transition: .3s ease-in-out;
+                    padding: $s20 0;
                 }
-                &.expand{
-                    height: 100%;
-                    transition: height 0.3s;
-                    transition-timing-function: ease-in-out;                     
+
+                .btn-container {
+                    padding: 20px 0;
+
+                    button {
+                        width: 100%;
+                    }
                 }
             }
-            
-        }
-        &.expand{
-            height: fit-content;
-            max-height: 100vh;
-            transition: 0.7s;
-            transition-timing-function: ease-in-out;
 
-            
+            .mb-droplist {
+                width: 100%;
+                max-height: 0;
+                padding: 0 1.25rem;
+                position: relative;
+                left: 0;
+                transition: max-height .5s ease-in-out;
+                overflow: hidden;
+                list-style: none;
+
+                &.expand {
+                    max-height: 100vh;
+                    transition: max-height .5s ease-in-out;
+                }
+            }
+
         }
-        
+
+        &.expand {
+            max-height: 100vh;
+            transition: max-height 0.7s ease-in-out;
+
+        }
+
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .header-navigation{
-        .main-menu{
+    .header-navigation {
+        .main-menu {
             display: none;
         }
-        .contact-btn{
+
+        .contact-btn {
             display: none;
         }
-        .menu-icon{
+
+        .menu-icon {
             display: flex !important;
         }
-        .mobile-menu{
+
+        .mobile-menu {
             display: block;
         }
     }
-    
+
 }

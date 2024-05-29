@@ -28,7 +28,7 @@ const Faq: React.FC = () => {
 
     return(
         <>
-        <section className="faq">
+        <section className="faq" id='faq'>
             <div className="container">
                 <div className="content-wrap">
                     <div className="sub-title">FAQ</div>
