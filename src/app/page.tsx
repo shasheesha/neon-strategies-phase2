@@ -20,9 +20,9 @@ export default function Home() {
       <About />
     </AnimatedSection>
     <ParallaxBanner />
-    {/* <AnimatedSection>
+    <AnimatedSection>
       <FAQ />
-    </AnimatedSection> */}
+    </AnimatedSection>
     <AnimatedSection>
       <OurProcess />
     </AnimatedSection>
