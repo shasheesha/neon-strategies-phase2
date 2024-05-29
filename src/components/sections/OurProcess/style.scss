@@ -8,6 +8,7 @@
         display: grid;
         margin-bottom: $s100;
         grid-template-columns: 325px auto;
+        gap: 2rem;
 
         .sub-title {
             font-size: $fz16;

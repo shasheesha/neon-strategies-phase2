@@ -1,71 +1,77 @@
 @import '@/styles/_variables.scss';
-.what-we-do{
+
+.what-we-do {
     padding-top: $s200;
-    .content-wrap{
+
+    .content-wrap {
         padding: 0 $s80;
+        display: grid;
+        grid-template-columns: 325px auto;
+        gap: 1rem;
 
-            display: grid;
-            grid-template-columns: 325px auto;
 
-            .sub-title{
-                font-size: $fz16;
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-bottom: $s20;
-                margin-top: 10px;
+        .sub-title {
+            font-size: $fz16;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: $s20;
+            margin-top: 10px;
+        }
+
+        .sub-content {
+            grid-column: 3;
+
+            .headline {
+                font-size: $fz48;
+                font-weight: 300;
+                line-height: $s60;
+                color: $black;
+                margin-bottom: $s60;
             }
 
-            .sub-content{
-                grid-column: 3;
-
-                .headline{
-                    font-size: $fz48;
-                    font-weight: 300;
-                    line-height: $s60;
-                    color: $black;
-                    margin-bottom: $s60;
-                }
-                
-            }
+        }
     }
-    .service-container{
+
+    .service-container {
         padding: 0 $s80;
 
-        .service-wrap{
+        .service-wrap {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
             border-bottom: 2px solid $secondary-bg;
             padding: $s100 0;
 
-            .service-content{
+            .service-content {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: start;
                 padding-right: $s100;
 
-                .service-content-wrap{
+                .service-content-wrap {
                     margin-bottom: $s20;
 
-                    .service-title{
+                    .service-title {
                         font-size: $fz32;
                         font-weight: 700;
                         margin-bottom: $s50;
                     }
-                    .service-description{
+
+                    .service-description {
                         font-size: $fz16;
                         line-height: $s30;
                         font-weight: 500;
                         color: $text-color;
                         margin-bottom: $s40;
                     }
-                    .tag-content{
+
+                    .tag-content {
                         display: flex;
                         flex-wrap: wrap;
                         gap: $s10;
 
-                        .tag{
+                        .tag {
                             font-size: $fz12;
                             padding: $s10 $s20;
                             border-radius: 100px;
@@ -83,22 +89,25 @@
     }
 }
 
-@media only screen and (max-width: 1024px){
-    .what-we-do{
-        .content-wrap{
-                display: flex;
-                flex-direction: column;
+@media only screen and (max-width: 1024px) {
+    .what-we-do {
+        .content-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
         }
-        .service-container{
-            .service-wrap{
+
+        .service-container {
+            .service-wrap {
                 grid-template-columns: repeat(1, 1fr);
-        
-                .service-content{
+
+                .service-content {
                     padding-right: 0;
                 }
-            }   
+            }
         }
-        
+
     }
-    
+
 }

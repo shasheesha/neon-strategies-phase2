@@ -5,9 +5,10 @@
 
     .content-wrap {
         padding: 0 $s80;
-
         display: grid;
         grid-template-columns: 325px auto;
+        gap: 1rem;
+
 
         .sub-title {
             font-size: $fz16;
@@ -47,6 +48,7 @@
         .content-wrap {
             display: flex;
             flex-direction: column;
+            gap: 2rem;
 
         }
     }
