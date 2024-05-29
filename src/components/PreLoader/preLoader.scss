@@ -21,8 +21,11 @@
             .encus-h3{
                 font-size: $fz32;
                 font-weight: 500;
-                margin-right: 15px;
                 color: $text-color;
+
+                &+.encus-h3{
+                    margin-left: 15px;
+                }
             }
         }
         .encus-animation-two{
