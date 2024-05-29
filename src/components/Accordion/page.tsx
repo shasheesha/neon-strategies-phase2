@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
 import AnimatedSection from '../Animation/AnimationFadeUp/page';
-import './style.scss';
+import './accordion.scss';
 
 interface AccordionItemProps {
   title: string;

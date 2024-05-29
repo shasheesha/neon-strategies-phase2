@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import './style.scss';
+import './headerNavigation.scss';
 import CustomButton from "@/components/button/CustomButton/CustomButton";
 import { useState } from "react";
 

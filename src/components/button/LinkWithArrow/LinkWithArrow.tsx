@@ -1,4 +1,4 @@
-import './style.scss';
+import './linkWithArrow.scss';
 
 interface Props {
     onClick?: () => void;
