@@ -1,0 +1,80 @@
+@import "@/styles/_variables.scss";
+
+.encus-preloader{
+    position: fixed;
+    z-index: 99;
+    background-color: $white;
+    inset: 0;
+
+    .encus-preloader-animation{
+        opacity: 0;
+        height: 100vh;
+        position: relative;
+
+        .encus-animation-one{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            inset: 0;
+
+            .encus-h3{
+                font-size: $fz32;
+                font-weight: 500;
+                margin-right: 15px;
+                color: $text-color;
+            }
+        }
+        .encus-animation-two{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            inset: 0;
+            flex-direction: column;
+
+            .encus-reveal-frame{
+                position: relative;
+                padding: $s20 0;
+
+                .encus-reveal-box{
+                    position: absolute;
+                    inset: 0;
+                    height: 70%;
+                    width: 120%;
+                    background-color: $primary-blue;
+                    opacity: 0;
+                    z-index: 10;
+                }
+                .encus-h3{
+                    font-size: $fz32;
+                    font-weight: 500;
+                    opacity: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+.encus-preloader.encus-hidden {
+    pointer-events: none;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .encus-animation-1 {
+      flex-direction: column;
+  
+      .encus-h3 {
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+      }
+    }
+  }
+  

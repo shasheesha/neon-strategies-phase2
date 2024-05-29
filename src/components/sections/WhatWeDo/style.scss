@@ -43,6 +43,8 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: start;
+                padding-right: $s100;
+
                 .service-content-wrap{
                     margin-bottom: $s20;
 
@@ -60,7 +62,7 @@
                     }
                     .tag-content{
                         display: flex;
-                        flex-direction: row;
+                        flex-wrap: wrap;
                         gap: $s10;
 
                         .tag{
@@ -90,8 +92,13 @@
         .service-container{
             .service-wrap{
                 grid-template-columns: repeat(1, 1fr);
+        
+                .service-content{
+                    padding-right: 0;
+                }
             }   
         }
+        
     }
     
 }

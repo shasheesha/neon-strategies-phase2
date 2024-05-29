@@ -14,8 +14,10 @@
         margin-bottom: $s20;
 
         .moving-btn{
-            width: 40px;
-            height: 40px;
+            width: $s60;
+            max-width: 50px;
+            height: $s60;
+            max-height: 50px;
             background-color: transparent;
             cursor: pointer;
             border: 2px solid $gray;

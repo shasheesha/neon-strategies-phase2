@@ -5,6 +5,7 @@ import HeaderNavigation from "@/components/layout/HeaderNavigation/page";
 import Footer from "@/components/layout/Footer/page";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react"
+import Preloader from "@/components/PreLoader/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Preloader />
         <HeaderNavigation />
         {children}
         <Footer />
