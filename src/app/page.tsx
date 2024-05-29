@@ -1,8 +1,7 @@
 import About from "@/components/sections/About/page";
 import GetInTouch from "@/components/sections/GetInTouch/page";
 import OurProcess from "@/components/sections/OurProcess/page";
-import FAQ from "@/components/sections/FAQ/page";
-import VideoBanner from "@/components/sections/VideoBanner/page";
+// import FAQ from "@/components/sections/FAQ/page";
 import Welcome from "@/components/sections/Welcome/page";
 import WhatWeDo from "@/components/sections/WhatWeDo/page";
 import AnimatedSection from '../components/Animation/AnimationFadeUp/page';
@@ -14,7 +13,6 @@ export default function Home() {
     <AnimatedSection>
       <Welcome />
     </AnimatedSection>
-    {/* <VideoBanner /> */}
     <AnimatedSection>
       <WhatWeDo />
     </AnimatedSection>
@@ -22,9 +20,9 @@ export default function Home() {
       <About />
     </AnimatedSection>
     <ParallaxBanner />
-    <AnimatedSection>
+    {/* <AnimatedSection>
       <FAQ />
-    </AnimatedSection>
+    </AnimatedSection> */}
     <AnimatedSection>
       <OurProcess />
     </AnimatedSection>
