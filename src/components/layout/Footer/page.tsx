@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./style.scss";
+import "./footer.scss";
 
 const Footer: React.FC = () => {
 

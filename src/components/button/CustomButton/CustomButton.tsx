@@ -1,5 +1,5 @@
 
-import './style.scss';
+import './customButton.scss';
 
 interface Props{
     submit?: boolean | false;
