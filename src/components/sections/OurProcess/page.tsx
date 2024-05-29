@@ -9,7 +9,7 @@ const OurProcess: React.FC = () => {
 
     return(
         <>
-        <section className="our-process">
+        <section className="our-process" id='our-process'>
             <div className="container">
                 <div className="content-wrap">                    
                     <div className="sub-title">OUR PROCESS AT NEON STRATEGIES</div>
