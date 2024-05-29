@@ -1,0 +1,85 @@
+@import '@/Styles/variables.scss';
+.image-carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+
+    .button-container{
+        display: flex;
+        flex-direction: row;
+        gap: $s10;
+        justify-content: end;
+        margin-bottom: $s20;
+
+        .moving-btn{
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            cursor: pointer;
+            border: 2px solid $gray;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            path{
+                stroke: $gray;
+            }
+
+            &.prev-btn{
+
+            }
+            &.next-btn{
+
+            }
+        }
+    }
+
+    .image-container {
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        .over-layer-right{
+            position: absolute;
+            height: -webkit-fill-available;
+            width: $s30;
+            z-index: 5;
+            right: 0;
+            background: linear-gradient(90deg, transparent 0%, $white 100%);
+    
+        }
+        .over-layer-left{
+            position: absolute;
+            height: -webkit-fill-available;
+            width: $s20;
+            z-index: 5;
+            left: 0;
+            background: linear-gradient(90deg, $white 0%, transparent 100%);
+        }
+        .image-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        
+            .image-card {
+                min-width: 60%;
+                box-sizing: border-box;
+                padding: 10px;
+            
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                }
+              }
+              
+          }  
+    }
+      
+}
+
+ 
+  
+  

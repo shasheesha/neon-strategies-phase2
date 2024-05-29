@@ -1,0 +1,54 @@
+@import '@/Styles/variables.scss';
+
+.accodion{
+    border-bottom: 2px solid;
+    border-color: $secondary-bg;
+    padding-left: $s80;
+
+    .trigger-btn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        border: none;
+        background-color: transparent;
+        padding: $s50 0;
+
+        &:focus{
+            outline: none;
+        }
+
+        .question{
+            font-size: $fz20;
+            font-weight: 700;
+        }
+
+        .arrow-icon{
+            transform: rotate(180deg);
+            transition: transform 0.5s;
+            transition-timing-function: ease-in-out;
+        &.expand{
+            transform: rotate(0deg);
+            transition: transform 0.5s;
+            transition-timing-function: ease-in-out;
+        }
+        }
+
+    }
+    .answer-wrap{
+        overflow: hidden;
+        transition: max-height 0.5s;
+        transition-timing-function: ease-in-out;
+        padding-right: $s100;
+
+        .answer{
+            padding-bottom: $s50;
+            font-size: $s20;
+            color: $text-color;
+            font-weight: 500;
+            line-height: $s40;
+        }
+    }
+
+}

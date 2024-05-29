@@ -1,0 +1,132 @@
+@import '@/styles/variables.scss';
+.our-process{
+    background-color: $secondary-bg;
+    padding: $s200 0;
+
+
+    .content-wrap {
+        display: grid;
+        margin-bottom: $s100;
+        grid-template-columns: 325px auto;
+
+        .sub-title {
+            font-size: $fz16;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: $s20;
+            margin-top: 10px;
+
+        }
+
+        .sub-content {
+            grid-column: 3;
+
+            .headline {
+                font-size: $fz48;
+                font-weight: 300;
+                line-height: $s60;
+                color: $black;
+                margin-bottom: $s40;
+            }
+
+        }
+    }
+
+    .card-container{
+        display: grid;
+        gap: 2rem;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+
+        .noncard-wrap{
+            padding-right: clamp(0rem, -11.25rem + 17.5781vw, 5.625rem);
+
+            .noncard-title{
+                font-size: $fz20;
+                font-weight: 700;
+                line-height: $s40;
+                margin-bottom: $s60;
+            }
+            .noncard-description{
+                font-size: $fz20;
+                font-weight: 500;
+                line-height: $s40;
+            }
+        }
+        .card-wrap{
+            .card{
+                padding: $s50;
+                background-color: $white;
+                border-radius: 8px;
+                height: calc(100% - $s100);
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
+                box-shadow: rgba(100, 100, 111, 0) 0px 7px 29px 0px;
+
+               .card-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: calc(100% - $s50);
+
+                    .card-icon{
+                        margin-bottom: $s80;
+                    }
+
+                    .card-title{
+                        margin-bottom: $s30;
+                        font-size: $fz24;
+                        font-weight: 500;
+                    }
+                    .card-description{
+                        margin-bottom: $s60;
+                        font-size: $fz16;
+                        font-weight: 500;
+                        line-height: $s30;
+                    }
+               }
+               &:hover{
+                scale: 105%;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+               }
+            }
+
+            .button-card{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                padding-top: $s20;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .our-process {
+        .content-wrap {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .our-process {
+        
+        .card-container{
+            grid-template-columns: repeat(2, 1fr);
+        }        
+    }
+}
+@media only screen and (max-width: 768px) {
+    .our-process {
+        .card-container{
+            grid-template-columns: repeat(1, 1fr);
+        }    
+    }
+}

@@ -3,7 +3,7 @@
 .custom-button{
     border: 2px solid;
     border-radius: 100px;
-    padding: 1rem 2rem;
+    padding: 1em 2em;
     background-color: transparent;
     position: relative;
     overflow: hidden;
@@ -11,16 +11,17 @@
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 
     &.normal{
-        padding: 1rem 2rem;
+        padding: 1em 2em;
 
         .btn-name{
             font-size: $fz20;
         }
     }
     &.small{
-        padding: 0.5rem 1rem;
+        padding: 0.5em 1em;
         
         .btn-name{
             font-size: $fz16;
@@ -142,6 +143,31 @@
             }
         }
     }
+    &.transparent-gray{
+        background-color: transparent;
+        border-color: $gray;
+
+        .btn-name{
+            color: $gray;
+        }
+        .arrow-icon{
+            path{
+                stroke: $gray;
+            }
+        }
+
+        &:hover{
+            .btn-name{
+                color: $white;
+            }
+            .arrow-icon{
+                path{
+                    stroke: $white;
+                }
+            }
+        }
+    }
+
 
     &:hover{
 

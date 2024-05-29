@@ -1,6 +1,6 @@
 @import '@/Styles/variables.scss';
 .welcome{
-    padding: clamp(5rem, 3.6581rem + 6.6061vw, 10rem) 0 clamp(3.75rem, 3.0791rem + 3.3031vw, 6.25rem) 0;
+    padding: $s200 0 $s100 0;
     .content-wrap{
         padding: 0 $s80;
 
@@ -20,6 +20,8 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: $s20;
+                margin-top: 10px;
+
             }
 
             .sub-content{
