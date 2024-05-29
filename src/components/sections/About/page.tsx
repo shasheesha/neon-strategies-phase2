@@ -1,4 +1,3 @@
-import LinkWithArrow from '@/components/button/LinkWithArrow/LinkWithArrow';
 import './style.scss';
 import CustomButton from '@/components/button/CustomButton/CustomButton';
 

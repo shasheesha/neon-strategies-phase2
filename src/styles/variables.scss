@@ -26,11 +26,15 @@ $fz72: clamp(1.5rem, 0.6949rem + 3.9637vw, 4.5rem); //72  px;
 
 
 //Spacings
+$s10: clamp(0.3125rem, 0.2286rem + 0.4129vw, 0.625rem);
 $s20: clamp(0.625rem, 0.4573rem + 0.8258vw, 1.25rem);
 $s30: clamp(0.9375rem, 0.6859rem + 1.2386vw, 1.875rem);
 $s40: clamp(1.25rem, 0.9145rem + 1.6515vw, 2.5rem);
+$s50: clamp(1.5625rem, 1.1432rem + 2.0644vw, 3.125rem);
 $s60: clamp(1.875rem, 1.3718rem + 2.4773vw, 3.75rem); 
-$s80: clamp(2.5rem, 1.8291rem + 3.3031vw, 5rem); 
+$s70: clamp(2.1875rem, 1.6004rem + 2.8902vw, 4.375rem);
+$s80: clamp(2.5rem, 1.8291rem + 3.3031vw, 5rem);
+$s90: clamp(2.8125rem, 2.0577rem + 3.7159vw, 5.625rem);
 $s100: clamp(3.125rem, 2.2863rem + 4.1288vw, 6.25rem); 
 $s120: clamp(3.75rem, 2.7436rem + 4.9546vw, 7.5rem); 
 $s160: clamp(5rem, 3.6581rem + 6.6061vw, 10rem); 

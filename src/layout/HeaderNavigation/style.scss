@@ -2,6 +2,8 @@
 .header-navigation{
     position: fixed;
     width: 100%;
+    z-index: 20;
+    background-color: $white;
 
     .content-wrap{
         padding: $s20 0;
@@ -10,7 +12,6 @@
         justify-content: space-between;
         align-items: center;
 
-        background-color: $white;
         
         .logo-wrap{
             .logo{
